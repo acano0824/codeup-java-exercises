@@ -6,14 +6,12 @@ public class Bob {
 
         System.out.println("What's up?");
 
-        String askBob = scan.nextLine();
-        boolean isAQuestion = askBob.endsWith("?");
+        String messageToBob = scan.nextLine();
+        boolean isAQuestion = messageToBob.endsWith("?");
 
-        String yellAtBob = scan.nextLine();
-        boolean yelling = yellAtBob.endsWith("!");
+        boolean yelling = messageToBob.endsWith("!");
 
-        String sayNothing = scan.nextLine();
-        boolean nothing = sayNothing.startsWith(" ");
+        boolean nothing = messageToBob.startsWith(" ");
 
 
         if (isAQuestion) {
