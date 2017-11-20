@@ -11,16 +11,13 @@ public class Bob {
 
         boolean yelling = messageToBob.endsWith("!");
 
-        boolean nothing = messageToBob.startsWith(" ");
-
-
         if (isAQuestion) {
             System.out.println("Sure.");
 
         } else if (yelling) {
             System.out.println("Whoa, chill out!");
 
-        } else if (nothing) {
+        } else if (messageToBob.equals("")) {
             System.out.println("Fine. Be that way!");
 
         } else {
