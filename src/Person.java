@@ -6,6 +6,21 @@ public class Person {
         studentA.setName("Sally");
         System.out.println(studentA.name);
         studentA.sayHello();
+
+
+//        Person person1 = new Person("John");
+//        Person person2 = new Person("John");
+//        System.out.println(person1.getName().equals(person2.getName()));
+//        System.out.println(person1 == person2);
+
+        Person person1 = new Person("John");
+        Person person2 = person1;
+        person2.setName("Jack");
+        System.out.println(person1.getName());
+        System.out.println(person2.getName());
+        System.out.println(person1 == person2);
+
+
     }
 
     private String name;
@@ -28,5 +43,7 @@ public class Person {
     public Person (String name) {
         this.name = name;
     };
+
+
 
 }
