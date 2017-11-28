@@ -3,12 +3,12 @@ package util;
 import java.util.Scanner;
 
 public class Input {
-    public static void main(String[] args) {
-
-
-    }
 
     private Scanner scanner;
+
+    public Input() {
+        this.scanner = new Scanner(System.in);
+    }
 
     public String getString() {
         return scanner.nextLine();
@@ -29,16 +29,16 @@ public class Input {
         }
     }
 
-    public int getInt(int min, int max) {
-        int userInput = getInt();
-        if (userInput >= min && userInput <=max) {
-            System.out.println(userInput);
-            return userInput;
-        } else {
-            System.out.println("Not in Range!");
-            return getInt(min, max);
-        }
-    }
+//    public int getInt(int min, int max) {
+//        int userInput = getInt();
+//        if (userInput >= min && userInput <=max) {
+//            System.out.println(userInput);
+//            return userInput;
+//        } else {
+//            System.out.println("Not in Range!");
+//            return getInt(min, max);
+//        }
+//    }
 //
 //    public double getDouble(double min, double max) {
 //

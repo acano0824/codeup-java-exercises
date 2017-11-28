@@ -18,6 +18,8 @@ public class Person {
         person2.setName("Jack");
         System.out.println(person1.getName());
         System.out.println(person2.getName());
+        System.out.println();
+
         System.out.println(person1 == person2);
 
 
