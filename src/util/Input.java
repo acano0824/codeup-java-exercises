@@ -29,16 +29,16 @@ public class Input {
         }
     }
 
-//    public int getInt(int min, int max) {
-//        int userInput = getInt();
-//        if (userInput >= min && userInput <=max) {
-//            System.out.println(userInput);
-//            return userInput;
-//        } else {
-//            System.out.println("Not in Range!");
-//            return getInt(min, max);
-//        }
-//    }
+    public int getInt(int min, int max) {
+        int userInput = getInt();
+        if (userInput >= min && userInput <=max) {
+            System.out.println(userInput);
+            return userInput;
+        } else {
+            System.out.println("Not in Range!");
+            return getInt(min, max);
+        }
+    }
 //
 //    public double getDouble(double min, double max) {
 //
