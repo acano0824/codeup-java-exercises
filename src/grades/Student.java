@@ -37,9 +37,9 @@ public class Student {
 
     }
 
-    public void printGrades() {
+    public String printGrades() {
 
-
+        return grades.toString().replaceAll("\\[|\\]", "");
 
     }
 

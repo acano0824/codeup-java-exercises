@@ -40,18 +40,22 @@ public class GradesApplication {
             switch (userResponse) {
                 case "acano0824":
                     System.out.println("Name: " + students.get(userResponse).getNames() + " - Github Username: " + userResponse);
+                    System.out.println("Current Grades: " + students.get(userResponse).printGrades());
                     System.out.println("Current Average: " + students.get(userResponse).getGradeAverage() + "\n\n");
                     break;
                 case "tere88":
                     System.out.println("Name: " + students.get(userResponse).getNames() + " - Github Username: " + userResponse);
+                    System.out.println("Current Grades: " + students.get(userResponse).printGrades());
                     System.out.println("Current Average: " + students.get(userResponse).getGradeAverage() + "\n\n");
                     break;
                 case "eme99":
                     System.out.println("Name: " + students.get(userResponse).getNames() + " - Github Username: " + userResponse);
+                    System.out.println("Current Grades: " + students.get(userResponse).printGrades());
                     System.out.println("Current Average: " + students.get(userResponse).getGradeAverage() + "\n\n");
                     break;
                 case "coco34":
                     System.out.println("Name: " + students.get(userResponse).getNames() + " - Github Username: " + userResponse);
+                    System.out.println("Current Grades: " + students.get(userResponse).printGrades());
                     System.out.println("Current Average: " + students.get(userResponse).getGradeAverage() + "\n\n");
                     break;
                 default:
