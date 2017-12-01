@@ -5,6 +5,7 @@ import util.Input;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.Map;
 
 public class GradesApplication {
 
@@ -31,13 +32,16 @@ public class GradesApplication {
             System.out.println("Welcome!\n\n" +
                     "Here are the github usernames of our students:\n\n" +
                     "|acano0824| |tere88| |eme99| |coco34|\n\n" +
-                    "What student would you like to see more information on? \n");
+                    "What student would you like to see more information on? (input 'all' to view all students)\n");
 
             Input input = new Input();
 
             String userResponse = input.getString();
 
             switch (userResponse) {
+                case "all":
+                    students.forEach((k,v) -> System.out.println("Name: " + v.getNames() + "\nGithub Username: " + k + "\nCurrent Average: " + v.getGradeAverage() + "\n"));
+                    break;
                 case "acano0824":
                     System.out.println("Name: " + students.get(userResponse).getNames() + " - Github Username: " + userResponse);
                     System.out.println("Current Grades: " + students.get(userResponse).printGrades());
